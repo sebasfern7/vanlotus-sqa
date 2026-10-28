@@ -11,6 +11,7 @@ Evidencia de pruebas del **Test Plan ágil (XP)** de VanLotus, sistema de invent
 |---|---|---|
 | `backend/` | Dominio y caso de uso del registro (Java 17) | 16 unitarias (TDD) + escenarios Gherkin con Cucumber (ATDD/BDD) |
 | `frontend/` | Validación del registro en el cliente | 6 pruebas con Vitest |
+| `e2e/` | Pruebas end-to-end de la pantalla de registro (Cypress, backend simulado con `cy.intercept`) | 4 pruebas E2E |
 | `docs/` | Dinámica SQA del registro y evidencias del ciclo rojo → verde → refactor | — |
 | `.github/workflows/` | Integración continua: corre todas las pruebas en cada push | — |
 
@@ -22,4 +23,11 @@ cd backend && ./mvnw test
 
 ```bash
 cd frontend && npm install && npm test
+```
+
+Las pruebas E2E necesitan el front de VanLotus corriendo en `http://localhost:5173` (repositorio privado),
+por eso se ejecutan en local y no en el CI:
+
+```bash
+cd e2e && npm install && npx cypress run
 ```
