@@ -1,0 +1,119 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[3,52] cannot find symbol
+  symbol:   class RegistrarUsuario
+  location: package com.ems.vanlotusbackend.registro.application
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[4,47] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[5,55] package com.ems.vanlotusbackend.registro.infrastructure does not exist
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[3,47] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[4,47] cannot find symbol
+  symbol:   class NombreUsuario
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[5,47] cannot find symbol
+  symbol:   class RepositorioCuentas
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[15,53] cannot find symbol
+  symbol: class RepositorioCuentas
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[28,13] cannot find symbol
+  symbol:   class RegistrarUsuario
+  location: class com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[17,24] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[20,27] cannot find symbol
+  symbol:   class NombreUsuario
+  location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[30,25] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[34,21] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[3,47] cannot find symbol
+  symbol:   class CifradorContrasenas
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[4,47] cannot find symbol
+  symbol:   class ContrasenaCifrada
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[5,47] cannot find symbol
+  symbol:   class CuentaUsuario
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[6,47] cannot find symbol
+  symbol:   class Rol
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[7,47] cannot find symbol
+  symbol:   class RegistroDeshabilitadoException
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[8,47] cannot find symbol
+  symbol:   class UsuarioYaRegistradoException
+  location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[24,19] cannot find symbol
+  symbol:   class CifradorContrasenas
+  location: class com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[34,13] cannot find symbol
+  symbol:   class RegistrarUsuario
+  location: class com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[INFO] 20 errors 
+[INFO] BUILD FAILURE
+[INFO] Total time:  2.474 s
+[INFO] Finished at: 2026-10-20T15:53:35-04:00
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[3,52] cannot find symbol
+[ERROR]   symbol:   class RegistrarUsuario
+[ERROR]   location: package com.ems.vanlotusbackend.registro.application
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[4,47] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[5,55] package com.ems.vanlotusbackend.registro.infrastructure does not exist
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[3,47] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[4,47] cannot find symbol
+[ERROR]   symbol:   class NombreUsuario
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[5,47] cannot find symbol
+[ERROR]   symbol:   class RepositorioCuentas
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[15,53] cannot find symbol
+[ERROR]   symbol: class RepositorioCuentas
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/aceptacion/RegistroUsuarioSteps.java:[28,13] cannot find symbol
+[ERROR]   symbol:   class RegistrarUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[17,24] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[20,27] cannot find symbol
+[ERROR]   symbol:   class NombreUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[30,25] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/support/RepositorioCuentasEnMemoria.java:[34,21] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.support.RepositorioCuentasEnMemoria
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[3,47] cannot find symbol
+[ERROR]   symbol:   class CifradorContrasenas
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[4,47] cannot find symbol
+[ERROR]   symbol:   class ContrasenaCifrada
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[5,47] cannot find symbol
+[ERROR]   symbol:   class CuentaUsuario
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[6,47] cannot find symbol
+[ERROR]   symbol:   class Rol
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[7,47] cannot find symbol
+[ERROR]   symbol:   class RegistroDeshabilitadoException
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[8,47] cannot find symbol
+[ERROR]   symbol:   class UsuarioYaRegistradoException
+[ERROR]   location: package com.ems.vanlotusbackend.registro.domain
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[24,19] cannot find symbol
+[ERROR]   symbol:   class CifradorContrasenas
+[ERROR]   location: class com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[ERROR] src/test/java/com/ems/vanlotusbackend/registro/application/RegistrarUsuarioTest.java:[34,13] cannot find symbol
+[ERROR]   symbol:   class RegistrarUsuario
+[ERROR]   location: class com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest

@@ -1,0 +1,10 @@
+# Backend
+backend/target/
+
+# Frontend
+node_modules/
+
+# Sistema
+.DS_Store
+*.log
+.env

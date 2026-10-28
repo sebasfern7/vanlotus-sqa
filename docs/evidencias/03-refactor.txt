@@ -1,0 +1,45 @@
+[INFO]  T E S T S
+[INFO] Running com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s -- in com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[INFO] Running com.ems.vanlotusbackend.registro.domain.ContrasenaTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.ems.vanlotusbackend.registro.domain.ContrasenaTest
+[INFO] Running com.ems.vanlotusbackend.registro.domain.NombreUsuarioTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in com.ems.vanlotusbackend.registro.domain.NombreUsuarioTest
+[INFO] Running com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioAceptacionTest
+Escenario: Registro exitoso con datos válidos                                              # features/registro_usuario.feature:12
+  Dado que el registro público está habilitado                                             # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.registroPublicoHabilitado()
+  Y que ya existe la cuenta "admin"                                                        # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Cuando una persona se registra con el usuario "lucia.vargas" y la contraseña "Joyas2026" # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.unaPersonaSeRegistra(java.lang.String,java.lang.String)
+  Entonces la cuenta "lucia.vargas" queda registrada con el rol "TRABAJADOR"               # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.laCuentaQuedaRegistrada(java.lang.String,java.lang.String)
+  Y la contraseña de "lucia.vargas" no se guarda en texto plano                            # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.laContrasenaNoSeGuardaEnTextoPlano(java.lang.String)
+Escenario: Rechazo de un nombre de usuario ya registrado                                     # features/registro_usuario.feature:18
+  Dado que el registro público está habilitado                                               # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.registroPublicoHabilitado()
+  Y que ya existe la cuenta "admin"                                                          # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Dado que ya existe la cuenta "lucia.vargas"                                                # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Cuando una persona se registra con el usuario "lucia.vargas" y la contraseña "OtraClave99" # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.unaPersonaSeRegistra(java.lang.String,java.lang.String)
+  Entonces el registro es rechazado con el mensaje "El nombre de usuario ya está en uso"     # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.elRegistroEsRechazado(java.lang.String)
+  Y en el sistema existe una sola cuenta "lucia.vargas"                                      # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.existeUnaSolaCuenta(java.lang.String)
+Esquema del escenario: Rechazo de contraseñas inseguras                                             # features/registro_usuario.feature:32
+  Dado que el registro público está habilitado                                                      # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.registroPublicoHabilitado()
+  Y que ya existe la cuenta "admin"                                                                 # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Cuando una persona se registra con el usuario "mateo" y la contraseña "abc12"                     # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.unaPersonaSeRegistra(java.lang.String,java.lang.String)
+  Entonces el registro es rechazado con el mensaje "La contraseña debe tener al menos 8 caracteres" # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.elRegistroEsRechazado(java.lang.String)
+  Y la cuenta "mateo" no queda registrada                                                           # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.laCuentaNoQuedaRegistrada(java.lang.String)
+Esquema del escenario: Rechazo de contraseñas inseguras                                                         # features/registro_usuario.feature:33
+  Dado que el registro público está habilitado                                                                  # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.registroPublicoHabilitado()
+  Y que ya existe la cuenta "admin"                                                                             # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Cuando una persona se registra con el usuario "mateo" y la contraseña "solamenteletras"                       # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.unaPersonaSeRegistra(java.lang.String,java.lang.String)
+  Entonces el registro es rechazado con el mensaje "La contraseña debe contener al menos una letra y un número" # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.elRegistroEsRechazado(java.lang.String)
+  Y la cuenta "mateo" no queda registrada                                                                       # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.laCuentaNoQuedaRegistrada(java.lang.String)
+Esquema del escenario: Rechazo de contraseñas inseguras                                                         # features/registro_usuario.feature:34
+  Dado que el registro público está habilitado                                                                  # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.registroPublicoHabilitado()
+  Y que ya existe la cuenta "admin"                                                                             # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.yaExisteLaCuenta(java.lang.String)
+  Cuando una persona se registra con el usuario "mateo" y la contraseña "12345678"                              # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.unaPersonaSeRegistra(java.lang.String,java.lang.String)
+  Entonces el registro es rechazado con el mensaje "La contraseña debe contener al menos una letra y un número" # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.elRegistroEsRechazado(java.lang.String)
+  Y la cuenta "mateo" no queda registrada                                                                       # com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioSteps.laCuentaNoQuedaRegistrada(java.lang.String)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.876 s -- in com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioAceptacionTest
+[INFO] Results:
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  4.225 s
+[INFO] Finished at: 2026-10-20T15:57:15-04:00
