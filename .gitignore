@@ -8,3 +8,7 @@ node_modules/
 .DS_Store
 *.log
 .env
+
+# Cypress
+e2e/cypress/videos/
+e2e/cypress/screenshots/
