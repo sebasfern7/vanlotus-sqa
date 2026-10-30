@@ -1,0 +1,13 @@
+[INFO] Running HU-02 Registrar venta con el precio correcto
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.888 s <<< FAILURE! -- in HU-02 Registrar venta con el precio correcto
+[ERROR] com.ems.vanlotusbackend.ventas.VentaPrecioTest.precioDistintoAlDeCatalogoSeRechaza -- Time elapsed: 0.051 s <<< FAILURE!
+Expecting code to raise a throwable.
+	at com.ems.vanlotusbackend.ventas.VentaPrecioTest.precioDistintoAlDeCatalogoSeRechaza(VentaPrecioTest.java:26)
+[ERROR] com.ems.vanlotusbackend.ventas.VentaPrecioTest.subtotalInconsistenteSeRechaza -- Time elapsed: 0.002 s <<< FAILURE!
+Expecting code to raise a throwable.
+	at com.ems.vanlotusbackend.ventas.VentaPrecioTest.subtotalInconsistenteSeRechaza(VentaPrecioTest.java:39)
+[ERROR]   VentaPrecioTest.precioDistintoAlDeCatalogoSeRechaza:26 
+Expecting code to raise a throwable.
+[ERROR]   VentaPrecioTest.subtotalInconsistenteSeRechaza:39 
+Expecting code to raise a throwable.
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0
