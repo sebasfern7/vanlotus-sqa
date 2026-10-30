@@ -42,6 +42,8 @@ public class VentaService {
 
     @Transactional
     public Venta createVenta(VentaRequest request) {
+        validarPrecios(request);
+
         Cliente cliente = null;
         if (request.getClienteId() != null) {
             cliente = clienteRepository.findById(request.getClienteId())
@@ -188,6 +190,29 @@ public class VentaService {
 
         venta.setEstado("CANCELADO");
         return ventaRepository.save(venta);
+    }
+
+    /**
+     * HU-02: el precio lo define el catálogo, no el front. Se valida antes de guardar nada.
+     * Las líneas con promoción quedan fuera de la comparación con el catálogo (el descuento lo cambia).
+     */
+    private void validarPrecios(VentaRequest request) {
+        for (DetalleVentaRequest det : request.getDetalles()) {
+            ProductoVariante variante = varianteRepository.findById(det.getVarianteId())
+                    .orElseThrow(() -> new IllegalArgumentException("Variante no encontrada: " + det.getVarianteId()));
+
+            if (det.getPromocionId() == null
+                    && det.getPrecioUnitario().compareTo(variante.getPrecioVenta()) != 0) {
+                throw new IllegalArgumentException("El precio unitario de " + variante.getNombreVariante()
+                        + " no coincide con el precio de catálogo (" + variante.getPrecioVenta() + ")");
+            }
+
+            BigDecimal subtotalEsperado = det.getPrecioUnitario().multiply(BigDecimal.valueOf(det.getCantidad()));
+            if (det.getSubtotal().compareTo(subtotalEsperado) != 0) {
+                throw new IllegalArgumentException("El subtotal de " + variante.getNombreVariante()
+                        + " debe ser precio x cantidad (" + subtotalEsperado + ")");
+            }
+        }
     }
 
     public List<DetalleVenta> getDetallesByVenta(Integer ventaId) {

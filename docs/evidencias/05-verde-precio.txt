@@ -1,0 +1,16 @@
+[INFO] Running com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s -- in com.ems.vanlotusbackend.registro.application.RegistrarUsuarioTest
+[INFO] Running com.ems.vanlotusbackend.registro.domain.ContrasenaTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s -- in com.ems.vanlotusbackend.registro.domain.ContrasenaTest
+[INFO] Running com.ems.vanlotusbackend.registro.domain.NombreUsuarioTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in com.ems.vanlotusbackend.registro.domain.NombreUsuarioTest
+[INFO] Running HU-02 Registrar venta con el precio correcto
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.848 s -- in HU-02 Registrar venta con el precio correcto
+[INFO] Running HU-04 Entregar o cancelar una venta
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in HU-04 Entregar o cancelar una venta
+[INFO] Running HU-03 Vender solo si hay stock suficiente
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in HU-03 Vender solo si hay stock suficiente
+[INFO] Running com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioAceptacionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.059 s -- in com.ems.vanlotusbackend.registro.aceptacion.RegistroUsuarioAceptacionTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
