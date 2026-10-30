@@ -32,17 +32,19 @@ public class VentaFixture {
     public final ProductoVarianteRepository varianteRepository = mock(ProductoVarianteRepository.class);
     public final ComponenteProductoRepository componenteRepository = mock(ComponenteProductoRepository.class);
     public final MovimientoProductoRepository movimientoProductoRepository = mock(MovimientoProductoRepository.class);
+    public final InsumoRepository insumoRepository = mock(InsumoRepository.class);
+    public final MovimientoInsumoRepository movimientoInsumoRepository = mock(MovimientoInsumoRepository.class);
     private final CurrentUserService currentUserService = mock(CurrentUserService.class);
 
     public final VentaService ventaService;
 
     public VentaFixture() {
         InventarioService inventarioService = new InventarioService(
-                mock(MovimientoInsumoRepository.class), movimientoProductoRepository,
-                mock(HistorialCostosInsumoRepository.class), mock(InsumoRepository.class), varianteRepository);
+                movimientoInsumoRepository, movimientoProductoRepository,
+                mock(HistorialCostosInsumoRepository.class), insumoRepository, varianteRepository);
         ventaService = new VentaService(
                 ventaRepository, detalleVentaRepository, varianteRepository, mock(ClienteRepository.class),
-                mock(PromocionRepository.class), componenteRepository, mock(InsumoRepository.class),
+                mock(PromocionRepository.class), componenteRepository, insumoRepository,
                 mock(CampaniaMarketingRepository.class), inventarioService, currentUserService);
 
         lenient().when(currentUserService.getCurrentUser()).thenReturn(new Usuario());
